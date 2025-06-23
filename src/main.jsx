@@ -5,7 +5,8 @@ import Level1 from './pages/Level1/Level1.jsx'
 import Level2 from './pages/Level2/Level2.jsx'
 import Level3 from './pages/Level3/Level3.jsx'
 import Level4 from './pages/Level4/Level4.jsx'
-
+import Level5 from './pages/Level5/Level5.jsx'
+import Level6 from './pages/Level6/Level6.jsx'
 /*@1:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -25,6 +26,8 @@ createRoot(document.getElementById('root')).render(
         {/*@3:下記のようにpathを"/level4"にセットすると、他のページからそのページに
         navigate("/level4")という処理を実行することで移動できるようになる*/}
         <Route path="/level4" element={<Level4 />} />
+        <Route path="/level5" element={<Level5 />} />
+        <Route path="/level6" element={<Level6 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

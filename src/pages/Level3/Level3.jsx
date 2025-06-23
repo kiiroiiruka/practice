@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Level3 = () => {
   const navigate =useNavigate()
   const handleClick = () => {
-      navigate("level4")
+      navigate("/level4")
   };
 
   return (
