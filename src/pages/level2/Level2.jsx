@@ -5,7 +5,7 @@ const Level2 = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate('/level3')  // ← 本来は level3 に遷移
+    navigate('/level3')
   }
 
   return (

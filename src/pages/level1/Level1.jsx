@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import './Level1.css' // CSSをインポート
+import './Level1.css'
 
 const Level1 = () => {
   const navigate = useNavigate()
