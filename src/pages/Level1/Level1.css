@@ -1,5 +1,5 @@
 /* Level1.css */
-/*「.level1-container ○○ {height: 100vh;}」で.level1-container内にある○○タグに「height: 100vh;」のスタイルを反映*/
+/*@1:下記は.level1-containerのクラスでjsxファイル内の方でこのクラスは呼び出して活用する*/
 .level1-container {
   display: flex;
   flex-direction: column;
@@ -8,13 +8,13 @@
   height: 100vh;            /* 全画面の高さ */
 }
 
-
+/*@1:下記はjsxファイルの方で.level1-containerを取り寄せているタグ内のh1タグに反映されるスタイルを指定しているクラス*/
 .level1-container h1 {
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 20px;
 }
-
+/*@1:下記はjsxファイルの方で.level1-containerを取り寄せているタグ内のbuttonタグに反映されるスタイルを指定しているクラス*/
 .level1-container button {
   padding: 10px 20px;
   font-size: 1rem;
@@ -25,7 +25,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+/*@1:下記はjsxファイルの方で.level1-containerを取り寄せているタグ内のbuttonの上にカーソルを持っていった際のレイアウトを指定しているクラス*/
 .level1-container button:hover {
   background-color: #0056b3;
 }

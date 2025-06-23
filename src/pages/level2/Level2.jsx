@@ -10,6 +10,9 @@ const Level2 = () => {
 
   return (
     <div className="level2-container">
+      {/*@2:上記のdivタグはimportしているCSSファイル内のlevel2-containerクラス
+      のレイアウトがdivで囲っている範囲内全てに反映されるようにしている。ちなみにその際、
+      level2-container内には横並びにするコードが書かれているためこの画面ではボタンが横並びで表示される*/}
       <button onClick={handleClick}>レベル3へ</button>
       <button onClick={handleClick}>レベル3へ</button>
     </div>

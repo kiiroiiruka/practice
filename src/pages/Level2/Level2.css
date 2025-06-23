@@ -1,5 +1,6 @@
 /* Level2.css */
 
+/*@2:横並びにしたい時はflex-direction:rowのレイアウトの入った下記のような.level2-containerというクラスをjsxファイル内のタグで呼び出せばOK*/
 .level2-container {
   display: flex;
   flex-direction: row;       /* 横並びに変更 */

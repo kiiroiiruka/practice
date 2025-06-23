@@ -4,15 +4,26 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Level1 from './pages/Level1/Level1.jsx'
 import Level2 from './pages/Level2/Level2.jsx'
 import Level3 from './pages/Level3/Level3.jsx'
+import Level4 from './pages/Level4/Level4.jsx'
 
-/*@常に重要:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
+/*@1:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      {/*@1:下記の<Routes>内に以下のようなコードを書くことでconst navigate = useNavigate()を活用した際
+      pathで指定した名前を活用してelementで指定したページに遷移することが出来るようになる*/}
       <Routes>
+        {/*@1:下記のようにpathを"/"にセットすると、最初にアプリが起動した際に開かれる画面として
+        セットされる。他のページからそのページに移動したい場合はnavigate("/")という処理を実行*/}
         <Route path="/" element={<Level1 />} />
+        {/*@1:下記のようにpathを"/level2"にセットすると、他のページからそのページに
+        navigate("/level2")という処理を実行することで移動できるようになる*/}
         <Route path="/level2" element={<Level2 />} />
+        {/*@2:下記のようにpathを"/level3"にセットすると、他のページからそのページに
+        navigate("/level3")という処理を実行することで移動できるようになる*/}
         <Route path="/level3" element={<Level3 />} />
+        {/*@3:下記のようにpathを"/level4"にセットすると、他のページからそのページに
+        navigate("/level4")という処理を実行することで移動できるようになる*/}
         <Route path="/level4" element={<Level4 />} />
       </Routes>
     </BrowserRouter>

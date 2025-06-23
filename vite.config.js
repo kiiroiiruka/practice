@@ -1,4 +1,5 @@
-//@3:vite.config.js内に変更を加えjsconfig.jsonファイルを追加すれば@でsrcフォルダのパスまで自動で指定できる。
+//@3:vite.config.js内を下記のようなコードになるように変更を加えjsconfig.jsonファイル内を
+//特定のコードを書いた状態で追加すればパス示す際に@でsrcフォルダ内からスタートできるようになる。
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
