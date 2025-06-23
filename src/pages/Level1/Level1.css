@@ -1,0 +1,31 @@
+/* Level1.css */
+/*「.level1-container ○○ {height: 100vh;}」で.level1-container内にある○○タグに「height: 100vh;」のスタイルを反映*/
+.level1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* 縦方向中央 */
+  align-items: center;      /* 横方向中央 */
+  height: 100vh;            /* 全画面の高さ */
+}
+
+
+.level1-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.level1-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.level1-container button:hover {
+  background-color: #0056b3;
+}
