@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import './Level2.css'
+import './Level3.css'
 
-const Level2 = () => {
+const Level3 = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -9,11 +9,11 @@ const Level2 = () => {
   }
 
   return (
-    <div className="level2-container">
+    <div className="level3-container">
       <button onClick={handleClick}>レベル3へ</button>
       <button onClick={handleClick}>レベル3へ</button>
     </div>
   )
 }
 
-export default Level2
+export default Level3

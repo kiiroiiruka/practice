@@ -1,6 +1,6 @@
 /* Level2.css */
 
-.level2-container {
+.level3-container {
   display: flex;
   flex-direction: row;       /* 横並びに変更 */
   align-items: center;
@@ -11,7 +11,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.level2-container button {
+.level3-container button {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #007bff;
@@ -22,6 +22,6 @@
   transition: background-color 0.3s ease;
 }
 
-.level2-container button:hover {
+.level3-container button:hover {
   background-color: #0056b3;
 }
