@@ -1,23 +1,21 @@
-/* Level2.css */
+/* Level3.css */
 
 .level3-container {
+  padding-top: 100px; /* ヘッダーの分 */
+  height: calc(100vh - 100px); /* 残りの高さを全て使う */
   display: flex;
-  flex-direction: row;       /* 横並びに変更 */
-  align-items: center;
   justify-content: center;
-  gap: 20px;                 /* ボタン間の余白 */
-  height: 100vh;
-  background-color: white;  /* 背景を白に */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b8ff958d;
+  align-items: center;
 }
 
 .level3-container button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
   border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

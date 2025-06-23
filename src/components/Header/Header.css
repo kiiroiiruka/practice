@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/*@3:下記の場合は、.header-boxという名前を、スタイルの反映させたいタグ内の
+className=''内の部分で示してあげる必要がある*/
+.header-box {
+  border: 2px solid #333;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/**@3:下記のように空白一マス開けて書く(例)「.header-box h1」のような場合に限って
+className=''内の部分にスタイルクラス名を書く必要がない、自動で反映される*/
+.header-box h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}

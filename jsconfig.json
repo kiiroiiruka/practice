@@ -1,0 +1,9 @@
+//@基礎:vite.config.js内に変更を加えjsconfig.jsonファイルを追加すれば@でsrcフォルダのパスまで自動で指定できる。
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
