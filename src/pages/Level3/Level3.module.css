@@ -1,6 +1,6 @@
-/* Level3.css */
 
-.level3-container {
+
+.level3Container {
   padding-top: 100px; /* ヘッダーの分 */
   height: calc(100vh - 100px); /* 残りの高さを全て使う */
   display: flex;
@@ -8,8 +8,8 @@
   background-color: white;
   align-items: center;
 }
-
-.level3-container button {
+/*@3:下記のように書けばlevel3Containerタグ内にあるbuttonタグのデザインを定められる*/
+.level3Container button {
   padding: 12px 24px;
   font-size: 16px;
   border-radius: 8px;
@@ -18,9 +18,8 @@
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
 }
-
-.level3-container button:hover {
+/*@3:下記のように書けばlevel3Containerタグ内にあるbuttonタグのボタンの上にカーソルがのっかった際のデザインを定められる*/
+.level3Container button:hover {
   background-color: #0056b3;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header/Header.jsx';
-import Footer from '@/components/Footer/Footer';
-import './Level5.css'; // CSSファイルを使い回す or Level4.cssに変更してもOK
+import Footer from '@/components/Footer/Footer';//@5:Headerの時と同様にFooterコンポーネントというものも作成する。
+import styles from './Level5.module.css'; // CSSモジュールを使用
 
 const Level5 = () => {
   const navigate = useNavigate();
@@ -15,23 +15,23 @@ const Level5 = () => {
   ];
 
   return (
-    <div className="level5-wrapper">
+    <div className={styles.wrapper}>
       <Header title="レベル5" />
 
-      <button className="level5-top-left-button" onClick={() => navigate('/level4')}>
+      <button className={styles.topLeftButton} onClick={() => navigate('/level4')}>
         レベル4へ
       </button>
 
-      <button className="level5-bottom-right-button" onClick={() => navigate('/level6')}>
+      <button className={styles.bottomRightButton} onClick={() => navigate('/level6')}>
         レベル6へ
       </button>
 
       {/*@5:下記のように.mapを2重に重ねる*/}
-      <div className="level5-center-content">
+      <div className={styles.centerContent}>
         {rows.map((row, rowIndex) => (
-          <div key={rowIndex} className="level5-row">
+          <div key={rowIndex} className={styles.row}>
             {row.map((char, charIndex) => (
-              <span key={charIndex} className="level5-cell">{char}</span>
+              <span key={charIndex} className={styles.cell}>{char}</span>
             ))}
           </div>
         ))}

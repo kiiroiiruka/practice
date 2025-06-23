@@ -1,5 +1,5 @@
 /* 全体ラッパー */
-.level4-wrapper {
+.wrapper {
   position: relative;
   height: 100vh;
   padding-top: 100px; /* Header分 */
@@ -8,8 +8,8 @@
 }
 
 /* 左上のボタン */
-.level4-top-left-button {
-  position: absolute;/*@4:absoluteは絶対座標、左下に固定表示されるようにするためにここで活用している*/
+.topLeftButton {
+  position: absolute;/*@4:absoluteは絶対座標、左上に固定表示されるようにするためにここで活用している*/
   top: 100px;/*@4:ここ上に100の余白を作ることでHeaderボタンが被らないようにしている*/
   left: 20px;
   padding: 8px 16px;
@@ -22,7 +22,7 @@
 }
 
 /* 左下のボタン */
-.level4-bottom-left-button {
+.bottomLeftButton {
   position: absolute;/*@4:absoluteは絶対座標、左下に固定表示されるようにするためにここで活用している*/
   bottom: 20px;
   left: 20px;
@@ -36,7 +36,7 @@
 }
 
 /* 中央の縦並びリスト */
-.level4-center-content {
+.centerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@
   height: calc(100vh - 100px);
 }
 
-.level4-item {
+.item {
   font-size: 24px;
   margin: 10px 0;
 }

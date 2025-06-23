@@ -1,11 +1,11 @@
 import React from 'react';
-import './Footer.css'; // CSS を読み込む
+import styles from './Footer.module.css'; // CSSモジュールを使用
 
 const Footer = ({ title }) => {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       {/* @Footer: className でスタイルクラス指定 */}
-      <div className="footer-box">
+      <div className={styles.footerBox}>
         {/* @Footer: 内部ボックスに囲ってタイトル表示 */}
         <h1>{title}</h1>
       </div>

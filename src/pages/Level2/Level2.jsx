@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import './Level2.css'
+import styles from './Level2.module.css'; 
 
 const Level2 = () => {
   const navigate = useNavigate()
@@ -9,12 +9,12 @@ const Level2 = () => {
   }
 
   return (
-    <div className="level2-container">
-      {/*@2:上記のdivタグはimportしているCSSファイル内のlevel2-containerクラス
-      のレイアウトがdivで囲っている範囲内全てに反映されるようにしている。ちなみにその際、
-      level2-container内には横並びにするコードが書かれているためこの画面ではボタンが横並びで表示される*/}
-      <button onClick={handleClick}>レベル3へ</button>
-      <button onClick={handleClick}>レベル3へ</button>
+    <div className={styles.level2Container}>
+      {/*@2: 上記のdivタグはimportしているCSSファイル内のlevel2Containerクラス
+      のレイアウトがdivで囲っている範囲内全てに反映されるようにしている。
+      ちなみにその際、level2Container内には横並びにするコードが書かれているためこの画面ではボタンが横並びで表示される*/}
+      <button className={styles.button} onClick={handleClick}>レベル3へ</button>
+      <button className={styles.button} onClick={handleClick}>レベル3へ</button>
     </div>
   )
 }

@@ -1,4 +1,5 @@
-.level5-wrapper {
+/* 全体ラッパー */
+.wrapper {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -7,7 +8,8 @@
   background-color: white;
 }
 
-.level5-top-left-button {
+/* 左上のボタン */
+.topLeftButton {
   position: absolute;
   top: 100px;
   left: 20px;
@@ -20,7 +22,8 @@
   cursor: pointer;
 }
 
-.level5-bottom-right-button {
+/* 右下のボタン */
+.bottomRightButton {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -33,7 +36,8 @@
   cursor: pointer;
 }
 
-.level5-center-content {
+/* 中央の縦並びリスト */
+.centerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,13 +49,14 @@
   padding-bottom: 58px;
 }
 
-.level5-row {
+/* 行のスタイル */
+.row {
   display: flex;
   gap: 20px;
   margin: 10px 0;
-  
 }
 
-.level5-cell {
+/* セルのスタイル */
+.cell {
   font-size: 24px;
 }
