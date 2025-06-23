@@ -5,7 +5,7 @@
   height: calc(100vh - 100px); /* 残りの高さを全て使う */
   display: flex;
   justify-content: center;
-  background-color: #b8ff958d;
+  background-color: white;
   align-items: center;
 }
 

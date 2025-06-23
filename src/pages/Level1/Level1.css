@@ -6,7 +6,7 @@
   justify-content: center;  /* 縦方向中央 */
   align-items: center;      /* 横方向中央 */
   height: 100vh;            /* 全画面の高さ */
-  background-color: #b8ff958d;
+  background-color: white;
 }
 
 /*@1:下記はjsxファイルの方で.level1-containerを取り寄せているタグ内のh1タグに反映されるスタイルを指定しているクラス*/
