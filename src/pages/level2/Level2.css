@@ -8,7 +8,7 @@
   justify-content: center;
   gap: 20px;                 /* ボタン間の余白 */
   height: 100vh;
-  background-color: white;  /* 背景を白に */
+  background-color: #b8ff958d;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

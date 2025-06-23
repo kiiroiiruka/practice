@@ -1,11 +1,13 @@
-.level4-wrapper {
+.level5-wrapper {
   position: relative;
   height: 100vh;
+  width: 100%;
   padding-top: 100px; /* Header分 */
   box-sizing: border-box;
+  background-color: hsla(100, 100%, 79%, 0.553);
 }
 
-.top-left-button {
+.level5-top-left-button {
   position: absolute;
   top: 100px;
   left: 20px;
@@ -18,7 +20,7 @@
   cursor: pointer;
 }
 
-.bottom-right-button {
+.level5-bottom-right-button {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -31,20 +33,25 @@
   cursor: pointer;
 }
 
-.center-content {
+.level5-center-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: calc(100vh - 100px);
+  /*@5:Footerとレベル6へ移動ボタンが被る場合は基本的に、下記のように表示させるものに
+  反映されるレイアウトのコードにpadding-bottomを付けて余白を追加させてスクロール領域
+  を伸ばせばOK。*/
+  padding-bottom: 58px;
 }
 
-.row {
+.level5-row {
   display: flex;
   gap: 20px;
   margin: 10px 0;
+  
 }
 
-.cell {
+.level5-cell {
   font-size: 24px;
 }

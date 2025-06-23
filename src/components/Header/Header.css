@@ -1,11 +1,11 @@
 .header {
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: #e9ff79;
   padding: 20px 0;
   display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0;
+  position: fixed;/* 画面に固定 */
+  top: 0;/* 画面上部 */
   left: 0;
   z-index: 1000;
 }

@@ -12,20 +12,20 @@ const Level4 = () => {
       <Header title="レベル4" />
       {/*@4:下記のbuttonタグのonClick={() => {navigate('/level3')}}のように
       関数宣言なしでも()=>{処理}でページ遷移処理などを実行できる*/}
-      <button className="top-left-button" onClick={() => {navigate('/level3')}}>
+      <button className="level4-top-left-button" onClick={() => {navigate('/level3')}}>
         レベル3へ
       </button>
 
       {/*@4:下記のbuttonタグのonClick={() => {navigate('/level5')}}のように
       関数宣言なしでも()=>{処理}でページ遷移処理などを実行できる*/}
-      <button className="bottom-left-button" onClick={() => {navigate('/level5')}}>
+      <button className="level4-bottom-left-button" onClick={() => {navigate('/level5')}}>
         レベル5へ
       </button>
 
-      <div className="center-content">
+      <div className="level4-center-content">
         {/*@4:縦並び(場合によっては横並びも)をさせる際は「.map」を活用すればいいと考えておけばOK*/}
         {items.map((item, index) => (
-          <div key={index} className="item">{item}</div>
+          <div key={index} className="level4-item">{item}</div>
         ))}
       </div>
     </div>
