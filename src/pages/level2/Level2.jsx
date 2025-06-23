@@ -1,13 +1,17 @@
+import { useNavigate } from 'react-router-dom'
+import './Level2.css'
 
-function Level2() {
+const Level2 = () => {
+  const navigate = useNavigate()
 
+  const handleClick = () => {
+    navigate('/level3')  // ← 本来は level3 に遷移
+  }
 
-
-  
   return (
-    <div>
-        <h1>Level2</h1>
-
+    <div className="level2-container">
+      <button onClick={handleClick}>レベル3へ</button>
+      <button onClick={handleClick}>レベル3へ</button>
     </div>
   )
 }

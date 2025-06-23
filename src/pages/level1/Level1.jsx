@@ -1,16 +1,16 @@
 import { useNavigate } from 'react-router-dom'
+import './Level1.css' // CSSをインポート
 
-function Level1() {
+const Level1 = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate('/level2')  // プログラム的に遷移
+    navigate('/level2')
   }
 
   return (
-    <div>
-      <h1>Level1</h1>
-      <button onClick={handleClick}>Go to Level2</button>
+    <div className="level1-container">
+      <button onClick={handleClick}>レベル2へ</button>
     </div>
   )
 }
