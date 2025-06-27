@@ -1,0 +1,13 @@
+.buttonList {
+  display: flex;
+  flex-direction: column;  /* ボタンを縦に並べる */
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.buttonItem {
+  width: 100%; /* 必要に応じて幅を調整 */
+  max-width: 300px; /* ボタンの最大幅 */
+  margin-bottom: 16px; /* ← ボタン間の空白を追加 */
+}

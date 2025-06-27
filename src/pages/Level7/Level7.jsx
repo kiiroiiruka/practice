@@ -27,7 +27,7 @@ const Level7 = () => {
 
       {/* レベル8へボタンと画像を一緒に表示 */}
       <div className={styles.bottomContent}>
-        <button className={styles.bottomButton} onClick={() => navigate('/level5')}>
+        <button className={styles.bottomButton} onClick={() => navigate('/level8')}>
           レベル8へ
         </button>
 

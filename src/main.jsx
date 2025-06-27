@@ -8,6 +8,8 @@ import Level4 from './pages/Level4/Level4'
 import Level5 from './pages/Level5/Level5'
 import Level6 from './pages/Level6/Level6'
 import Level7 from './pages/Level7/Level7'
+import Level8 from './pages/Level8/Level8'
+import Level9 from './pages/Level9/Level9'
 /*@1:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,6 +32,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/level5" element={<Level5 />} />
         <Route path="/level6" element={<Level6 />} />
         <Route path="/level7" element={<Level7 />} />
+        <Route path="/level8" element={<Level8 />} />
+        <Route path="/level9" element={<Level9 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

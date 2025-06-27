@@ -1,0 +1,60 @@
+/* 通常のボタンスタイル */
+/* 通常のボタンスタイル */
+.button {
+  padding: 10px 80px;
+  font-size: 1rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black; /* ✅ 常に黒色の文字に */
+}
+
+/* 青い枠 */
+.outline {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 0 4px rgb(130, 159, 255), 0 0 0 6px #007bff;
+}
+
+.outline:hover {
+  background-color: #007bff;
+  color: white; /* ホバー時のみ白に変える */
+}
+
+/* 茶色の枠 */
+.brownOutline {
+  border: 3px solid #e15e00; /* 外側の実線の枠 */
+  box-shadow: 0 0 0 4px #fd7e24d6, 0 0 0 6px #000000; /* ←ここで中間の枠を茶色に変更*/
+}
+
+.brownOutline:hover {
+  background-color: #ff8833;
+  color: white;
+}
+
+
+/* 参考：他のスタイル（既存） */
+.filled {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+}
+
+.filled:hover {
+  background-color: #0056b3;
+}
+
+.danger {
+  background-color: white;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+}
+
+.danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
