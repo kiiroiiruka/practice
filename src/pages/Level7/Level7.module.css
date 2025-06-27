@@ -1,0 +1,55 @@
+.wrapper {
+  padding: 20px;
+  margin:auto;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.listRow {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+
+}
+.roundedImage {
+  width: 80px;               /* サイズは必要に応じて調整 */
+  height: 80px;
+  object-fit: cover;         /* アスペクト比を保ちつつ画像を切り取る */
+  border-radius: 50%;        /* 丸くするための指定 */
+  border: 2px solid #ccc;    /* 任意：枠線でアイコンっぽく */
+}
+.bottomContent {
+  display: flex;
+  justify-content: space-evenly; /* ← 均等に配置する */
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  gap: 20px; /* オプション: 要素間に追加の隙間を持たせるなら */
+}
+
+
+/* ボタンもサイズを画像に揃えて調整したい場合 */
+.bottomButton {
+  padding: 10px 10px;
+  font-size: 1rem;
+  width:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bottomButton:hover {
+  background-color: #0056b3;
+}

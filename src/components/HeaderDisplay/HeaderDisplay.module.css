@@ -1,0 +1,192 @@
+/* 外枠で全体をスライド制御 */
+.headerWrapper {
+  position: fixed;
+  top: 0;
+  left: 2.5%;
+  width: 95%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+/* 開いた時：0に戻る（表示） */
+.open {
+  transform: translateY(0);
+}
+
+/* 閉じた時：上に隠れる */
+.closed {
+  transform: translateY(-100%);
+}
+
+/* ヘッダー本体 */
+.header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;  /* 横幅を100%に設定 */
+  max-width: none; /* max-widthを解除して親要素の幅を全て活用 */
+  position: relative;
+  border-radius: 0 0 15px 15px;
+  overflow: visible;
+}
+
+/* ヘッダー中身 */
+.headerContent {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* タイトル */
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* レベル選択グリッド */
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* レベルボタン */
+.levelButton {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 45px;
+}
+
+.levelButton:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.levelButton.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* 戻るボタン */
+.backButton {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.backButton:hover {
+  background-color: #5a6268;
+}
+
+/* コントロールボタン群 */
+.controlButtons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.controlButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  flex: 1;
+  max-width: 80px;
+}
+
+.controlButton:hover {
+  background-color: #218838;
+}
+
+/* 下部タイトル */
+.bottomTitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* 追加コンテンツ */
+.content {
+  margin-top: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* トグルボタン */
+/* トグルボタン */
+.toggleButton {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px; /* 長方形にするために小さな角を設定 */
+  width: 40%;  /* 親要素に合わせて横幅を少し縮めて100%から90%に設定 */
+  max-width: 300px; /* 最大横幅を設定 */
+  height: 40px;  /* 高さを少し小さく設定 */
+  font-size: 1rem; /* フォントサイズを調整 */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;  /* 左側に余白を設定 */
+  padding-right: 1rem; /* 右側に余白を設定 */
+}
+
+.toggleButton:hover {
+  background-color: #0056b3;
+  transform: translateX(-50%) scale(1.05); /* 少し拡大してアニメーション */
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 480px) {
+  .header {
+    max-width: 100%;  /* 親要素に合わせて横幅を100%に設定 */
+  }
+
+  .levelGrid {
+    max-width: 180px;
+  }
+
+  .levelButton {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    min-height: 40px;
+  }
+}
