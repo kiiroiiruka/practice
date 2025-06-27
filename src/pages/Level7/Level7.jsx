@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import HeaderDisplay from '@/components/HeaderDisplay/HeaderDisplay';
 import Footer from '@/components/Footer/Footer';
-import FlatList from '@/components/ItemList/ItemList';
+import ItemList from '@/components/ItemList/ItemList';
 import styles from './Level7.module.css';
 
 // 画像のインポート
@@ -26,8 +26,8 @@ const Level7 = () => {
         その際下記の
         
         <div className={styles.listRow}>
-          <FlatList items={myList1} />
-          <FlatList items={myList2} />
+          <ItemList items={myList1} />
+          <ItemList items={myList2} />
         </div>
 
         の内容を引数としてHeaderDisplayコンポーネント内に送っている。
@@ -35,8 +35,8 @@ const Level7 = () => {
       <HeaderDisplay title="レベル7のヘッダー">
         <div className={styles.listRow}>
           {/*@7:ここではレベル6で活用したコンポーネントを活用している。*/}
-          <FlatList items={myList1} />
-          <FlatList items={myList2} />
+          <ItemList items={myList1} />
+          <ItemList items={myList2} />
         </div>
       </HeaderDisplay>
 
