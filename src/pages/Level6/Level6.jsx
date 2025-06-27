@@ -18,8 +18,6 @@ const Level6 = () => {
     <div className={styles.wrapper}>
       <Header title="レベル6" />
 
-      <h2>フラットリスト表示</h2>
-
       {/* ▼ ページ遷移ボタン ▼ */}
       <div className={styles.listRow}>
         <button className={styles.button} onClick={() => navigate('/level5')}>
