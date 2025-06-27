@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './FlatList.module.css'; // CSSモジュールをインポート
+import styles from './ItemList.module.css'; // CSSモジュールをインポート
+//@6:このコンポーネントを呼び出すことで一覧として表示させている。
 
 // フラットリストコンポーネント
-const FlatList = ({ items }) => {
+const ItemList = ({ items }) => {
   return (
     <div className={styles.listContainer}> {/* コンテナにスタイルを適用 */}
       {items.map((item, index) => (
@@ -14,4 +15,4 @@ const FlatList = ({ items }) => {
   );
 };
 
-export default FlatList;
+export default ItemList;

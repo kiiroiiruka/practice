@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import styles from "./HeaderDisplay.module.css"
-
+/*@7:表示領域を確保して表示するHeaderコンポーネント*/
 const HeaderDisplay = ({
   children, // 引数で表示内容を受け取る
 }) => {
