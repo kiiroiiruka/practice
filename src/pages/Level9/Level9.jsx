@@ -1,14 +1,31 @@
-import React from 'react';
+import React from 'react'
+import{ useNavigate } from 'react-router-dom'
+import Header from '@/components/Header'
+import styles from './Level9.module.css'
 
+const Level9=()=>{
+  const navigate = useNavigate()
 
-const Level9 = () => {
+  const goToLevel5 = () => {
+    navigate('/Level5')
+  }
+
+  const goToLevel3 = () => {
+    navigate('/Level3')
+  }
+
   return (
     <div>
-      <text>
-        レベル9の画面です(未完成)
-      </text>
+      <Header title="レベル4"/>
+      <button className={styles.topButton} onClick={goToLevel3}>レベル3へ</button>
+        <div className={styles.level4Container}>
+          <button className={styles.centerButton}>あ</button>
+          <button className={styles.centerButton}>い</button>
+          <button className={styles.centerButton}>う</button>
+        </div>
+        <button className={styles.bottomLeftButton} onClick={goToLevel5}>レベル5へ</button>
     </div>
-  );
-};
+  )
+}
 
-export default Level9;
+export default Level9

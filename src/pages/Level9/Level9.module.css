@@ -1,0 +1,56 @@
+.level4Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.topButton {
+  width: 200px;
+  height: 60px;
+  top: 140px;
+  left: 0;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  z-index: 1001;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.centerButton {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  margin: 8px 0;
+  background-color: #414f58;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.centerButton:hover {
+  background-color: #2980b9;
+}
+
+.bottomLeftButton {
+  width: 200px;
+  height: 60px;
+  bottom: 20px;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}
