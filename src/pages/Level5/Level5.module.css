@@ -6,12 +6,13 @@
   padding-top: 100px; /* Header分 */
   box-sizing: border-box;
   background-color: white;
+ 
 }
 
 /* 左上のボタン */
 .topLeftButton {
   position: absolute;
-  top: 100px;
+  top: 110px;
   left: 20px;
   padding: 8px 16px;
   font-size: 14px;
@@ -20,6 +21,7 @@
   background-color: #007bff;
   color: white;
   cursor: pointer;
+  
 }
 
 /* 右下のボタン */
@@ -33,7 +35,8 @@
   background-color: #28a745;
   color: white;
   cursor: pointer;
-  bottom: 0;
+  bottom: 80px;
+
 }
 
 /* 中央の縦並びリスト */

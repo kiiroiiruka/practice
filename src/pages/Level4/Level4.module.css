@@ -10,7 +10,7 @@
 /* 左上のボタン */
 .topLeftButton {
   position: absolute;/*@4:absoluteは絶対座標、左上に固定表示されるようにするためにここで活用している*/
-  top: 100px;/*@4:ここ上に100の余白を作ることでHeaderボタンが被らないようにしている*/
+  top: 110px;/*@4:ここ上に110の余白を作ることでHeaderボタンが被らないようにしている*/
   left: 20px;
   padding: 8px 16px;
   font-size: 14px;
@@ -24,7 +24,7 @@
 /* 左下のボタン */
 .bottomLeftButton {
   position: absolute;/*@4:absoluteは絶対座標、左下に固定表示されるようにするためにここで活用している*/
-  bottom: 20px;
+  bottom: 10px;
   left: 20px;
   padding: 8px 16px;
   font-size: 14px;
